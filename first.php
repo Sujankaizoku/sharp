@@ -2,49 +2,10 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="stylesheet" href="sty.css">
+<link rel="stylesheet" href="bootstrap.css">
 <title>Kaizoku</title>
-<style>
-body {
-    font-family: Verdana,sans-serif;
-    font-size: 0.9em;
-}
 
-div#header, div#footer {
-    padding: 10px;
-    color: white;
-    background-color: black;
-}
-
-
-div#content {
-   margin: 5px;
-   padding: 10px;
-   background-color: lightgrey;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
-</style>
 </head>
 <body>
 
@@ -73,8 +34,56 @@ li a:hover {
         setTimeout(carousel, 3000);
     }
     </script>
+    <div class="bs-docs-section clearfix">
+        <div class="row">
+          <div class="col-lg-12">
+            <!--<div class="page-header">
+            </div>-->
+            
+            <div class="bs-component">
+              <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">OUR TEAM</a>
+                  </div>
 
-    <ul>
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                      <li><a href="#">Link</a></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">One more separated link</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                      </div>
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#">Link</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+    <!--<ul>
       <li><a class="active" href="#home">Home</a></li>
       <li><a href="#news">Discussion</a></li>
       <li><a href="#contact">Join Hands</a></li>
@@ -85,6 +94,6 @@ li a:hover {
           <h2>Government</h2>
           <p>Issues Regarding Governmental </p>
         </div>
-
+-->
 </body>
 </html>
