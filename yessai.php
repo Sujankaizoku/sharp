@@ -27,11 +27,34 @@
 
 <div class="container-fluid bg-1 text-center">
   <br><br><br>
-  <h3>Open Government?</h3>
-  <img src="a.jpg" class="img-circle" alt="Bird" width="350" height="350">
-  <h3>This is a website for public views and platforms</h3>
-</div>
+<section>
+  <img class="mySlides" src="img/a.jpg"
+  style="width:1350px;height:300px;">
+  <img class="mySlides" src="img/b.jpg"
+  style="width:1350px;height:300px;">
+  <img class="mySlides" src="img/c.jpg"
+  style="width:1350px;height:300px;">
+</section>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
 
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+
+
+<h3>Open Government?</h3>
 <div class="container-fluid bg-2 text-center">
   <h3>This website can simple suggest the public</h3>
   <p>We can speak however we want and do things whatever the way we want </p>
